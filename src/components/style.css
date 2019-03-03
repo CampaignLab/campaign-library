@@ -1,0 +1,119 @@
+/* Reference colours
+
+Red #ff4136
+Grey #ebe9e8
+Text grey #4d4d4d
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Lato:500');
+
+body {
+    color: #4d4d4d;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #ff4136;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+h2 {
+    padding-top: 20px;
+}
+nav {
+    color: #ff4136;
+    padding: 10px 10vw;
+    font-family: 'Lato', sans-serif;
+}
+nav a {
+    margin: 0;
+    display: block;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+nav li {
+    margin-right: 20px;
+    list-style: none;
+    display: block;
+    align-items: center;
+    display: flex;
+}
+.push-left {
+    margin-right: auto;
+    font-size: 2em;
+}
+header {
+    background-color: #ff4136;
+    color: #fff;
+    margin: 0;
+    display: block;
+    min-height: 10vh;
+    padding: 40px 10vw;
+}
+header h1 {
+    margin: 0;
+    line-height: 2em;
+}
+header h3 {
+    font-weight: 400;
+    opacity: 0.9;
+}
+main {
+    padding: 40px 0;
+    font-size: 20px;
+    line-height: 35px;
+    min-height: 70vh;
+}
+article {
+    max-width: 700px;
+    margin: 15px;
+}
+article img {
+    max-width: 700px;
+}
+footer {
+    color: #fff;
+    background-color: #ff4136;
+    padding: 20px 10vw;
+    display: block;
+}
+footer a {
+    color: #fff;
+}
+.resource-index a {
+    text-decoration: none;
+    color: #4d4d4d;
+}
+.resource-index a:hover {
+    text-decoration: underline;
+}
+.resource-index em {
+    opacity: 0.5;
+}
+.resource-card {
+    padding: 25px;
+    margin: 10px 20px 10px 0px;
+    background-color: #ebe9e8;
+    display: block;
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    main {
+        padding: 40px 10vw;
+    }
+    article {
+        margin: 0;
+    }
+} 
