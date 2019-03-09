@@ -2,6 +2,14 @@
 
 Campaign Library is a new library resource for activists and campaign organisers on campaign theory and practice in the UK, made by [Campaign Lab](https://campaignlab.london).
 
+The Campaign Library uses [Airtable](https://airtable.com/) as a database of resources, and [Gatsby.js](https://www.gatsbyjs.org/) as its frontend web framework.
+
+## Adding resources to the Campaign Library
+
+Use the [Campaign Lab Submission Form](https://airtable.com/shrhW7BMRPPjGNZAx) to add resources to the Campaign Library.
+
+See the [Campaign Lab Guide](https://github.com/CampaignLab/Campaign-Lab-Guide/blob/master/Campaign%20Lab%20Guide.md) for more information on getting involved in Campaign Lab projects.
+
 ## Development
 
 ### Running locally
