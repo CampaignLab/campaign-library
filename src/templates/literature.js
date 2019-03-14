@@ -15,11 +15,6 @@ export default ({ data }) => (
             __html: data.airtable.data.summary.childMarkdownRemark.html,
           }}
         />
-        <h3>Method</h3>
-        <span dangerouslySetInnerHTML={{
-            __html: data.airtable.data.method.childMarkdownRemark.html,
-          }}
-        />
         <h3>Key Takeaways</h3>
         <span dangerouslySetInnerHTML={{
             __html: data.airtable.data.key_takeaways.childMarkdownRemark.html,
@@ -28,6 +23,11 @@ export default ({ data }) => (
         <h3>Practical Recommendations</h3> 
         <span dangerouslySetInnerHTML={{
             __html: data.airtable.data.practical_recommendations.childMarkdownRemark.html,
+          }}
+        />
+        <h3>Method</h3>
+        <span dangerouslySetInnerHTML={{
+            __html: data.airtable.data.method.childMarkdownRemark.html,
           }}
         />
       </article>
