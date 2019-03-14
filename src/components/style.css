@@ -44,7 +44,7 @@ nav ul {
 nav li {
     margin-right: 20px;
     list-style: none;
-    display: block;
+    display: inline-block;
     align-items: center;
     display: flex;
 }
@@ -90,24 +90,29 @@ footer {
 footer a {
     color: #fff;
 }
+.resource-index {
+    padding: 0;
+}
 .resource-index a {
     text-decoration: none;
     color: #4d4d4d;
 }
-.resource-index a:hover {
-    text-decoration: underline;
-}
 .resource-index em {
     opacity: 0.5;
 }
+.resource-index li {
+    list-style-type: none;
+}
 .resource-card {
     padding: 25px;
-    margin: 10px 20px 10px 0px;
+    margin: 10px 0px 10px 0px;
     background-color: #ebe9e8;
     display: block;
     overflow: hidden;
-    background-size: cover;
-    width: 100%;
+}
+.resource-card:hover {
+    background-color: #4d4d4d;
+    color: #ebe9e8;
 }
 @media only screen and (min-width: 600px) {
     main {

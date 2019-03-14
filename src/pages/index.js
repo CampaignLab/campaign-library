@@ -11,8 +11,8 @@ const IndexPage = ({ data }) => (
         <main>
           <ul className="resource-index">
             {data.allAirtable.edges.map((edge, i) => (
-              <li className="resource-card">
-                <Link to={edge.node.data.slug}>{edge.node.data.name}</Link>
+              <li>
+                <Link to={edge.node.data.slug} className="resource-card">{edge.node.data.name}</Link>
               </li>
             ))}
           </ul>
