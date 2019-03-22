@@ -64,7 +64,6 @@ export const query = graphql`
         url
         type
         author
-        tags
         country
         open_access
       }

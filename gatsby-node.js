@@ -1,14 +1,15 @@
 const path = require(`path`)
 exports.createPages = ({ graphql, actions }) => {
   // createPage is a built in action,
-  // available to all gatsby-node exports
+  // available to all gatsby-node exports.
   const { createPage } = actions
   return new Promise(async resolve => {
-    // we need the table name (e.g. "Sections")
-    // as well as the unique path for each Page/Section.
+    // Get table name and slug for all tables, 
+    // except "tags-index", as we don't want to generate 
+    // pages from that table.
     const result = await graphql(`
       {
-        allAirtable {
+        allAirtable(filter: { table: { nin: "tags" } }) {
           edges {
             node {
               table
@@ -20,8 +21,8 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     `)
-    // For each path, create page and choose a template.
-    // values in context Object are available in that page's query
+    // For each path, create the page and choose a template.
+    // Values in context object are available in that page's query.
     result.data.allAirtable.edges.forEach(({ node }) => {
       const isLiterature = node.table === 'literature'
       createPage({

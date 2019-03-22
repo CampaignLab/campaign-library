@@ -114,6 +114,15 @@ footer a {
     background-color: #4d4d4d;
     color: #ebe9e8;
 }
+.resource-card span {
+    background-color: #bfbebd;
+    color: #ebe9e8;
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    border-radius: 5px;
+    padding: 7px;
+    line-height: 1em;
+}
 @media only screen and (min-width: 600px) {
     main {
         padding: 40px 10vw;

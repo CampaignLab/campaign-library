@@ -12,7 +12,13 @@ const IndexPage = ({ data }) => (
           <ul className="resource-index">
             {data.allAirtable.edges.map((edge, i) => (
               <li>
-                <Link to={edge.node.data.slug} className="resource-card">{edge.node.data.name}</Link>
+                <Link to={edge.node.data.slug} className="resource-card">
+                  {edge.node.data.name}
+                  <br/>
+                  {edge.node.data.topic_tags.map((topic_tag, i) => (
+                    <span>{topic_tag.data.tag_name}</span>
+                  ))}
+                </Link>
               </li>
             ))}
           </ul>
@@ -32,8 +38,12 @@ export const query = graphql`
       node {
         data {
           name
-          tags
           slug
+          topic_tags {
+            data {
+              tag_name
+            }
+          }
         }
       }
     }

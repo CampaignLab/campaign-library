@@ -20,14 +20,18 @@ module.exports = {
             tableName: 'literature',
             tableView: 'published',
             mapping: { summary: 'text/markdown', method: 'text/markdown', key_takeaways: 'text/markdown', practical_recommendations: 'text/markdown' },
-            tableLinks: ['in_practice'],
+            tableLinks: ['topic_tags', 'in_practice'],
           },
           { 
             baseId: process.env.AIRTABLE_BASE_ID,
             tableName: 'in-practice',
             tableView: 'published',
-            mapping: { summary: 'text/markdown' },
-            tableLinks: ['literature'],
+            mapping: { summary: 'text/markdown' }
+          },
+          { 
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: 'tags',
+            tableView: 'all'
           }
         ]
       }
